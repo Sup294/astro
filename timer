@@ -1,0 +1,13 @@
+import time
+let seconds = 0;
+let seconds = 0;
+input.onGesture(Gesture.Shake, () => {
+    while (seconds > 0) {
+        basic.showNumber(seconds);
+        basic.pause(1000);
+        seconds -= 1;
+    }
+    basic.showIcon(IconNames.Diamond)
+    basic.showIcon(IconNames.SmallDiamond)
+    basic.showIcon(IconNames.No)
+})
